@@ -2714,10 +2714,22 @@ img {
 			<a href="playercontext.html" class="tsd-kind-icon">Player<wbr>Context</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="playercontext.html#title" class="tsd-kind-icon">title</a>
+					<a href="playercontext.html#ispaused" class="tsd-kind-icon">is<wbr>Paused</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="playercontext.html#uri" class="tsd-kind-icon">uri</a>
+					<a href="playercontext.html#playbackoptions" class="tsd-kind-icon">playback<wbr>Options</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="playercontext.html#playbackposition" class="tsd-kind-icon">playback<wbr>Position</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="playercontext.html#playbackrestrictions" class="tsd-kind-icon">playback<wbr>Restrictions</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="playercontext.html#playbackspeed" class="tsd-kind-icon">playback<wbr>Speed</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="playercontext.html#track" class="tsd-kind-icon">track</a>
 				</li>
 			</ul>
 		</li>
@@ -2784,8 +2796,12 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#title" class="tsd-kind-icon">title</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#uri" class="tsd-kind-icon">uri</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#ispaused" class="tsd-kind-icon">is<wbr>Paused</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#playbackoptions" class="tsd-kind-icon">playback<wbr>Options</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#playbackposition" class="tsd-kind-icon">playback<wbr>Position</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#playbackrestrictions" class="tsd-kind-icon">playback<wbr>Restrictions</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#playbackspeed" class="tsd-kind-icon">playback<wbr>Speed</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="playercontext.html#track" class="tsd-kind-icon">track</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2794,41 +2810,121 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="title" class="tsd-anchor"></a>
-				<h3>title</h3>
-				<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<a name="ispaused" class="tsd-anchor"></a>
+				<h3>is<wbr>Paused</h3>
+				<div class="tsd-signature tsd-kind-icon">is<wbr>Paused<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L16">PlayerContext.ts:16</a></li>
+						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L43">PlayerContext.ts:43</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The title of the Context</p>
+						<p>Whether the player is Paused</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>memberof</dt>
-						<dd><p>PlayerContext</p>
+						<dd><p>PlayerState</p>
 						</dd>
 					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="uri" class="tsd-anchor"></a>
-				<h3>uri</h3>
-				<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<a name="playbackoptions" class="tsd-anchor"></a>
+				<h3>playback<wbr>Options</h3>
+				<div class="tsd-signature tsd-kind-icon">playback<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="playbackoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PlaybackOptions</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L24">PlayerContext.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L60">PlayerContext.ts:60</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The uri of the Context</p>
+						<p>Current Playback options</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>memberof</dt>
-						<dd><p>PlayerContext</p>
+						<dd><p>PlayerState</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="playbackposition" class="tsd-anchor"></a>
+				<h3>playback<wbr>Position</h3>
+				<div class="tsd-signature tsd-kind-icon">playback<wbr>Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L27">PlayerContext.ts:27</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Current playback position in ms</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PlayerState</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="playbackrestrictions" class="tsd-anchor"></a>
+				<h3>playback<wbr>Restrictions</h3>
+				<div class="tsd-signature tsd-kind-icon">playback<wbr>Restrictions<span class="tsd-signature-symbol">:</span> <a href="playbackrestrictions.html" class="tsd-signature-type" data-tsd-kind="Interface">PlaybackRestrictions</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L51">PlayerContext.ts:51</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Any playback restrictions for the current user account</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PlayerState</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="playbackspeed" class="tsd-anchor"></a>
+				<h3>playback<wbr>Speed</h3>
+				<div class="tsd-signature tsd-kind-icon">playback<wbr>Speed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L35">PlayerContext.ts:35</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Playback speed (podcasts)</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PlayerState</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="track" class="tsd-anchor"></a>
+				<h3>track</h3>
+				<div class="tsd-signature tsd-kind-icon">track<span class="tsd-signature-symbol">:</span> <a href="track.html" class="tsd-signature-type" data-tsd-kind="Interface">Track</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/lfabl/react-native-spotify-remote/blob/master/src/PlayerContext.ts#L19">PlayerContext.ts:19</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Current Track</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PlayerState</p>
 						</dd>
 					</dl>
 				</div>

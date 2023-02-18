@@ -1,3 +1,6 @@
+import PlaybackRestrictions from "./PlaybackRestrictions";
+import PlaybackOptions from "./PlaybackOptions";
+import Track from "./Track";
 /**
  * The Spotify player context
  *
@@ -6,17 +9,45 @@
  */
 export default interface PlayerContext {
     /**
-     * The title of the Context
+     * The Current Track
      *
-     * @type {string}
-     * @memberof PlayerContext
+     * @type {Track}
+     * @memberof PlayerState
      */
-    title: string;
+    track: Track;
     /**
-     * The uri of the Context
+     * Current playback position in ms
      *
-     * @type {string}
-     * @memberof PlayerContext
+     * @type {number}
+     * @memberof PlayerState
      */
-    uri: string;
+    playbackPosition: number;
+    /**
+     * Playback speed (podcasts)
+     *
+     * @type {*}
+     * @memberof PlayerState
+     */
+    playbackSpeed: any;
+    /**
+     * Whether the player is Paused
+     *
+     * @type {boolean}
+     * @memberof PlayerState
+     */
+    isPaused: boolean;
+    /**
+     * Any playback restrictions for the current user account
+     *
+     * @type {PlaybackRestrictions}
+     * @memberof PlayerState
+     */
+    playbackRestrictions: PlaybackRestrictions;
+    /**
+     * Current Playback options
+     *
+     * @type {PlaybackOptions}
+     * @memberof PlayerState
+     */
+    playbackOptions: PlaybackOptions;
 }
